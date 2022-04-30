@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    position: relative;
+    background-color: #235390;
+    background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/star-pattern.svg);
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.info_container {
+    margin: 12px auto 0;
+    max-width: 600px;
+    width: 100%;
+}
+
+.info_container h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 0 50px;
+}
+
+.btn_group {
+    margin: 0 auto 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 272px;
+    max-width: 300px;
+}
+
+.btn {
+    cursor: pointer;
+    letter-spacing: .8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0 solid #58a700;
+    border-bottom: 4px solid #58a700;
+    border-radius: 16px;
+    color: #fff;
+    height: 50px;
+    padding: 0 32px !important;
+    text-transform: uppercase;
+    background-color: #58cc02;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.login {
+    align-items: center;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .8px;
+    border-radius: 16px;
+    background-color: #fff;
+    letter-spacing: .8px;
+}
+
+ .btn.primary {
+    margin: 12px auto 0;
+    background-color: #58cc02;
+    border: 0 solid #58a700;
+    border-bottom: 4px solid #58a700;
+    border-width: 2px 2px 4px;
+} 
+
+.btn.secondary {
+    margin: 12px auto 0;
+    background-color: #235390;
+    border: 0 solid #042c60;
+    border-bottom: 4px solid #042c60;
+    border-width: 2px 2px 4px;
+}
+
+.login.input {
+    margin: 12px auto 0;
+    background-color: #fff;
+    border: 0 solid #042c60;
+    border-bottom: 4px solid #042c60;
+    border-width: 2px 2px 4px;
+}
+
+/* Game Screen */
+
+.gamePage {
+    display: grid;
+    background-color: aqua;
+}
+
+.game_main {
+    font-size: 19px;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    background-color: #58a700;
+}
+
+.game_container {
+    background-color: orange;
+    min-height: 450px;
+    display: grid;
+    grid-template-rows: min-content minmax(0px, 1fr);
+    gap: 24px;
+    margin: 0 auto;
+}
+
+.game_container > h1 {
+    line-height: 1.25;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.card {
+    border-color: #e5e5e5;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 2px 2px 4px;
+    cursor: pointer;
+    position: relative;
+    color: rgb(75, 75, 75);
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+}
+
+.card_container {
+    display: grid;
+    gap: 8px;
+    background-color: yellow;
+}
+
+@media (min-width: 700px) {
+    
+    /* Game Screen */
+
+    .card_container {
+        grid-template-columns: repeat(3, minmax(0px, 1fr));
+    }
+
+    .gamePage {
+        gap: 0px;
+        grid-template-rows: 100px 1fr 140px;
+        min-height: 690px;
+        padding: 0;
+    }
+
+    .game_container {
+        min-height: 450px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 1065px) {
+    main {
+        padding: 40px 10px !important;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 24px 12px;
+        width: 100%;
+    }
+
+    .btn_primary {
+        min-width: 272px !important;
+    }
+}
